@@ -1,8 +1,6 @@
 "use client";
 
 import { useBattleList } from "@/context/battleListContext";
-import { MyPredictions } from "./components";
-import NoVotes from "./components/NoVotes";
 import bg from "@/assets/images/background.png";
 import { signIn, useSession } from "next-auth/react";
 import { useEffect } from "react";
