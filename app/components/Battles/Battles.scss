@@ -1,0 +1,55 @@
+/* versus vote fighter buttons */
+.vote-button {
+  background: #1e1e1e1a;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 40px 0px #ffffff4d;
+  border-radius: 30px;
+}
+
+.vote-button:hover {
+  border: 1px solid #582fb8;
+  box-shadow: 0px 4px 40px 0px #582fb8;
+}
+
+.vote-button-voted {
+  border: 1px solid #582fb8;
+  box-shadow: 0px 4px 40px 0px #582fb8;
+  border-radius: 30px;
+}
+
+.vote-button-unvoted {
+  border: 1px solid #ffffff80;
+  background: #1e1e1e1a;
+  color: #ffffff80;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .vote-button {
+    background: #1e1e1e1a;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 4px 40px 0px #ffffff4d;
+    border-radius: 30px;
+  }
+  
+  .vote-button:hover {
+    border: 3px solid #582fb8;
+    box-shadow: 0px 4px 40px 0px #582fb8;
+  }
+  
+  .vote-button-voted {
+    border: 3px solid #582fb8;
+    box-shadow: 0px 4px 40px 0px #582fb8;
+    border-radius: 30px;
+  }
+  
+  .vote-button-unvoted {
+    border: 3px solid #ffffff80;
+    background: #1e1e1e1a;
+    color: #ffffff80;
+    border-radius: 30px;
+  }}
+
+.percentage-bar-shadow {
+  box-shadow: 0px 0px 16px 3px #582fb880;
+}
