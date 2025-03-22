@@ -1,9 +1,9 @@
 "use client";
 
 import { Variants, motion, useInView } from "framer-motion";
-import "./FirstEdition.scss";
+import "./Recap.scss";
 import { MutableRefObject, useRef } from "react";
-import FirstEditionVideo from "./components/FirstEditionVideo";
+import RecapVideo from "./components/RecapVideo";
 
 const directions = {
   left: "left",
@@ -65,15 +65,12 @@ export default function FirstEdition() {
               },
             }}
           >
-            REVIVÍ PARENSE DE MANOS
+            ASÍ SE VIVIÓ
           </motion.h3>
 
           {/* Right Line */}
           {buildLine(directions.right, variant, inView)}
         </div>
-        <h2 className="italic text-base xs:text-lg sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-light text-center">
-          1ª edición
-        </h2>
       </div>
     );
   };
@@ -81,13 +78,13 @@ export default function FirstEdition() {
   return (
     <section
       className="w-screen h-[80vh] md:h-auto hidden 2xs:flex justify-center lg:mt-32"
-      id="edition"
+      id="recap"
     >
       <div className="container flex flex-col justify-center items-center">
         <div className="w-full h-full lg:h-auto relative flex flex-col justify-start items-center gap-5 lg:gap-10 xs:px-4 sm:px-7 md:px-10 lg:px-0 pt-14 xs:pt-16 sm:pt-[75px] md:pt-20 lg:pt-24 xl:pt-28 2xl:pt-36 3xl:pt-44">
           {buildSection(titleRef, titleInView, titleVariant)}
           <div className="flex w-full lg:w-5/6 xl:w-5/6 2xl:w-3/4 3xl:2/3 max-w-[1250px] video-border aspect-video px-1 xl:px-4 xl:py-3">
-            <FirstEditionVideo />
+            <RecapVideo />
           </div>
         </div>
       </div>

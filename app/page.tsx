@@ -3,12 +3,12 @@ import {
   Hero,
   Battles,
   Fighters,
-  Teaser,
   Hosts,
   Analysts,
-  FirstEdition,
   Footer,
   Popup,
+  Recap,
+  Replay,
 } from "./components";
 import bg from "./assets/images/background.png";
 
@@ -24,12 +24,12 @@ export default function Home() {
       </div>
       <Navbar />
       <Hero />
+      <Recap />
       <Battles />
       <Fighters />
-      <Teaser />
       <Hosts />
       <Analysts />
-      <FirstEdition />
+      <Replay />
       <Footer />
       <Popup />
     </main>

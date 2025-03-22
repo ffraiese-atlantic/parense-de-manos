@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const FirstEditionVideo = () => {
+const RecapVideo = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const FirstEditionVideo = () => {
 
   if (!isClient) return null;
 
-  const src = "https://www.youtube.com/embed/4vy1Jv0dAmc";
+  const src = "https://www.youtube.com/embed/kl-lXxcsHgc?si=LAC32wpislec8vVR";
 
   return (
     <iframe
@@ -22,4 +22,4 @@ const FirstEditionVideo = () => {
   );
 };
 
-export default FirstEditionVideo;
+export default RecapVideo;

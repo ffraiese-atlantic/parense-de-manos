@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function TeaserVideo() {
+const ReplayVideo = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -10,14 +10,16 @@ export default function TeaserVideo() {
 
   if (!isClient) return null;
 
-  const src = "https://www.youtube.com/embed/1J2pyysEoZA?si=QD_tmOsqANpK_G0Y";
+  const src = "https://www.youtube.com/embed/Ft6GN_BMMwI?si=W4_X8RUTzcOf_eMa";
 
   return (
     <iframe
-      className="w-full h-full rounded-[35px] mx-4 my-3 py-2"
+      className="w-full h-full rounded-[35px] mx-4 py-2"
       src={src}
       title="Parense de Manos 2 - Teaser"
       allowFullScreen
     />
   );
-}
+};
+
+export default ReplayVideo;
